@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-21 19:11:32.425682",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "followed_by",
+  "next_follow_up_date",
+  "next_follow_up_by",
+  "column_break_yijo",
+  "mode_of_communication",
+  "description",
+  "closed",
+  "user_name"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Followup Date"
+  },
+  {
+   "fieldname": "followed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Followed by",
+   "options": "User"
+  },
+  {
+   "fieldname": "next_follow_up_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Next Follow up Date"
+  },
+  {
+   "fieldname": "next_follow_up_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Next Follow up By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_yijo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "mode_of_communication",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mode of Communication",
+   "options": "Mode of Communication"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "closed",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Closed"
+  },
+  {
+   "fetch_from": "followed_by.username",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "User Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-21 22:29:21.046603",
+ "modified_by": "Administrator",
+ "module": "shrivari_civiltech",
+ "name": "Auditing Followup",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

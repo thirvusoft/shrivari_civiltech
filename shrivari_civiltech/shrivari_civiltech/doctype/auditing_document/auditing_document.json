@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-21 19:06:19.744935",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "auditor",
+  "naming_series",
+  "column_break_ukxb",
+  "document_type",
+  "priority",
+  "column_break_gwfh",
+  "document_receiver",
+  "status",
+  "followup_details_section",
+  "auditing_followup"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auditor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Auditor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ukxb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gwfh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_receiver",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Receiver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nIn-Progress\nCompleted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "followup_details_section",
+   "fieldtype": "Section Break",
+   "label": "Followup Details"
+  },
+  {
+   "fieldname": "auditing_followup",
+   "fieldtype": "Table",
+   "label": "Auditing Followup",
+   "options": "Auditing Followup"
+  },
+  {
+   "default": "AD-.YY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "AD-.YY.-.#####"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-21 22:32:18.370923",
+ "modified_by": "Administrator",
+ "module": "shrivari_civiltech",
+ "name": "Auditing Document",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
