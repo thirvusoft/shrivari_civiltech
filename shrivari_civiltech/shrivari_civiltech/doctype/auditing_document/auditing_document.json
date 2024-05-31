@@ -6,15 +6,24 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "date",
-  "auditor",
   "naming_series",
-  "column_break_ukxb",
-  "document_type",
-  "priority",
-  "column_break_gwfh",
-  "document_receiver",
+  "date",
+  "for_which_financial_years",
+  "demand_raised_in_notice",
+  "document_attachment",
   "status",
+  "column_break_ukxb",
+  "category",
+  "company",
+  "due_date_for_reply__action",
+  "assigned_at_our_office",
+  "assigned_at_auditor_office",
+  "department_officer_to_followup",
+  "column_break_gwfh",
+  "received_date",
+  "notice_ref_details_in_brief",
+  "history_of_adjournments_received",
+  "follow_up_tab",
   "followup_details_section",
   "auditing_followup"
  ],
@@ -23,14 +32,7 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "auditor",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Auditor",
+   "label": "Date of Notice Served",
    "reqd": 1
   },
   {
@@ -38,38 +40,16 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "document_type",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Document Type",
-   "reqd": 1
-  },
-  {
-   "fieldname": "priority",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Priority",
-   "options": "Low\nMedium\nHigh",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_gwfh",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "document_receiver",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Document Receiver",
-   "reqd": 1
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_list_view": 1,
-   "label": "Status",
-   "options": "Open\nIn-Progress\nCompleted",
-   "reqd": 1
+   "label": "Status of Notice",
+   "options": "\nIn Progress\nReply filed\nAppeal Filed\nOrder Received\nFinished"
   },
   {
    "fieldname": "followup_details_section",
@@ -83,17 +63,88 @@
    "options": "Auditing Followup"
   },
   {
-   "default": "AD-.YY.-.#####",
+   "default": "NOT-2324-.####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 1,
-   "label": "naming_series",
-   "options": "AD-.YY.-.#####"
+   "label": "Naming Series",
+   "options": "NOT-2324-.####"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nIncome Tax\nTDS - Income Tax\nSales Tax\nTDS - Sales Tax\nService Tax\nGST\nGST - Audit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "label": "Received Date"
+  },
+  {
+   "fieldname": "for_which_financial_years",
+   "fieldtype": "Small Text",
+   "label": "For which Financial Year(s)"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Select",
+   "label": "Company",
+   "options": "\nR.P.Periyasamy & Co\nSamy Construction\nShrii Vaari Civiltech\nVarasiddhi Constructions",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_attachment",
+   "fieldtype": "Attach",
+   "label": "Notice Attachment"
+  },
+  {
+   "fieldname": "notice_ref_details_in_brief",
+   "fieldtype": "Small Text",
+   "label": "Notice Ref & Details in Brief"
+  },
+  {
+   "fieldname": "demand_raised_in_notice",
+   "fieldtype": "Currency",
+   "label": "Demand raised in Notice"
+  },
+  {
+   "fieldname": "due_date_for_reply__action",
+   "fieldtype": "Date",
+   "label": "Due date for reply / action"
+  },
+  {
+   "fieldname": "history_of_adjournments_received",
+   "fieldtype": "Table",
+   "label": "History of adjorment(s) received",
+   "options": "Date"
+  },
+  {
+   "fieldname": "assigned_at_our_office",
+   "fieldtype": "Link",
+   "label": "Assigned at our Office",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "assigned_at_auditor_office",
+   "fieldtype": "Data",
+   "label": "Assigned at Auditor Office"
+  },
+  {
+   "fieldname": "department_officer_to_followup",
+   "fieldtype": "Data",
+   "label": "Department Officer to Followup"
+  },
+  {
+   "fieldname": "follow_up_tab",
+   "fieldtype": "Tab Break",
+   "label": "Follow up"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-21 22:32:18.370923",
+ "modified": "2024-05-31 10:59:45.125938",
  "modified_by": "Administrator",
  "module": "shrivari_civiltech",
  "name": "Auditing Document",
