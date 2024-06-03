@@ -80,7 +80,7 @@
   {
    "fieldname": "received_date",
    "fieldtype": "Date",
-   "label": "Received Date"
+   "label": "Notice Received Date"
   },
   {
    "fieldname": "for_which_financial_years",
@@ -107,7 +107,7 @@
   {
    "fieldname": "demand_raised_in_notice",
    "fieldtype": "Currency",
-   "label": "Demand raised in Notice"
+   "label": "Demand raised in Notice (in Rupees \u20b9)"
   },
   {
    "fieldname": "due_date_for_reply__action",
@@ -122,14 +122,14 @@
   },
   {
    "fieldname": "assigned_at_our_office",
-   "fieldtype": "Link",
-   "label": "Assigned at our Office",
-   "options": "Employee"
+   "fieldtype": "Table MultiSelect",
+   "label": "Person assigned at our Office",
+   "options": "Employee Table"
   },
   {
    "fieldname": "assigned_at_auditor_office",
-   "fieldtype": "Data",
-   "label": "Assigned at Auditor Office"
+   "fieldtype": "Small Text",
+   "label": "Person assigned at Auditor Office"
   },
   {
    "fieldname": "department_officer_to_followup",
@@ -144,7 +144,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-31 10:59:45.125938",
+ "modified": "2024-06-01 09:28:35.338380",
  "modified_by": "Administrator",
  "module": "shrivari_civiltech",
  "name": "Auditing Document",
