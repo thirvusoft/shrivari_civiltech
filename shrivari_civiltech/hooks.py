@@ -28,7 +28,7 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Supplier" : "/shrivari_civiltech/utils/js/supplier.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -122,13 +122,14 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Purchase Order": {
+        "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.purchase_order.validate"
+	},
+    "Purchase Invoice": {
+        "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.purchase_order.validate"
+	},
+}
 
 # Scheduled Tasks
 # ---------------
