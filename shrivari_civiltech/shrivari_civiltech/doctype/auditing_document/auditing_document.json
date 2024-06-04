@@ -23,7 +23,6 @@
   "received_date",
   "notice_ref_details_in_brief",
   "history_of_adjournments_received",
-  "test",
   "follow_up_tab",
   "followup_details_section",
   "auditing_followup"
@@ -141,17 +140,11 @@
    "fieldname": "follow_up_tab",
    "fieldtype": "Tab Break",
    "label": "Follow up"
-  },
-  {
-   "default": "0",
-   "fieldname": "test",
-   "fieldtype": "Check",
-   "label": "test"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-04 14:11:39.410661",
+ "modified": "2024-06-04 14:19:51.104392",
  "modified_by": "Administrator",
  "module": "shrivari_civiltech",
  "name": "Auditing Document",
