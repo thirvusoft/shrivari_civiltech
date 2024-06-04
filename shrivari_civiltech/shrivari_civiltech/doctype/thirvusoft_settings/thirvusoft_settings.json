@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-01 12:43:49.155177",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_trading_type",
+  "column_break_xeai",
+  "template_for_applicable_supplier_type",
+  "template_for_non_applicable_supplier_type"
+ ],
+ "fields": [
+  {
+   "description": "<span style=\"color:red;\">Select list of trading types that are applicable for MSME type of Suppliers</span>",
+   "fieldname": "supplier_trading_type",
+   "fieldtype": "Table MultiSelect",
+   "label": "Supplier Trading Type",
+   "options": "Applicable Supplier Trading Type"
+  },
+  {
+   "fieldname": "template_for_applicable_supplier_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Template for Applicable Supplier Type (MSME)",
+   "options": "Payment Terms Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "template_for_non_applicable_supplier_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Template for Non Applicable Supplier Type (MSME)",
+   "options": "Payment Terms Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xeai",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-01 16:23:59.148261",
+ "modified_by": "Administrator",
+ "module": "shrivari_civiltech",
+ "name": "Thirvusoft Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
