@@ -123,11 +123,14 @@ doctype_js = {"Supplier" : "/shrivari_civiltech/utils/js/supplier.js"}
 # Hook on document methods and events
 
 doc_events = {
-	"Purchase Order": {
-        "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.purchase_order.validate"
-	},
-    "Purchase Invoice": {
-        "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.purchase_order.validate"
+# 	"Purchase Order": {
+#         "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.purchase_order.validate"
+# 	},
+#     "Purchase Invoice": {
+#         "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.purchase_order.validate"
+# 	},
+    "Supplier": {
+        "validate":"shrivari_civiltech.shrivari_civiltech.utils.py.supplier.validate"
 	},
 }
 

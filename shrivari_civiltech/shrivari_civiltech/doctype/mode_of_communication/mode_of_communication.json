@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:communication_name",
  "creation": "2024-05-27 12:55:21.970209",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,15 +12,17 @@
   {
    "fieldname": "communication_name",
    "fieldtype": "Data",
-   "label": "Communication Name"
+   "label": "Communication Name",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-27 12:55:53.987052",
+ "modified": "2024-06-06 15:04:55.464964",
  "modified_by": "Administrator",
  "module": "shrivari_civiltech",
  "name": "Mode of Communication",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

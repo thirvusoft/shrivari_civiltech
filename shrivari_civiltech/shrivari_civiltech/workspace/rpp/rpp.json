@@ -1,0 +1,93 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"ROTX2Ognsy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Auditing</b></span>\",\"col\":12}},{\"id\":\"m7aCQmg--X\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Auditing Document\",\"col\":3}},{\"id\":\"SqJJzEkvz4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":3}},{\"id\":\"DNvaSN8TBl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Mode of Communication\",\"col\":3}},{\"id\":\"uYClpgKErb\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"3mJQjPRWDZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Supplier</b></span>\",\"col\":12}},{\"id\":\"U15aAbwXDR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":3}},{\"id\":\"X-2NCg0Iak\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier Trading Type\",\"col\":3}},{\"id\":\"gx9v2uDXY5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Terms Template\",\"col\":3}},{\"id\":\"UFbxt6NeiG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Term\",\"col\":3}},{\"id\":\"hz9ynonqK5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Thirvusoft Settings\",\"col\":3}}]",
+ "creation": "2024-06-05 09:31:15.984483",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image-view",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "RPP",
+ "links": [],
+ "modified": "2024-06-07 11:18:32.194639",
+ "modified_by": "Administrator",
+ "module": "shrivari_civiltech",
+ "name": "RPP",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 33.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Auditing Document",
+   "link_to": "Auditing Document",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Employee",
+   "link_to": "Employee",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Mode of Communication",
+   "link_to": "Mode of Communication",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Supplier",
+   "link_to": "Supplier",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Payment Terms Template",
+   "link_to": "Payment Terms Template",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Payment Term",
+   "link_to": "Payment Term",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Thirvusoft Settings",
+   "link_to": "Thirvusoft Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Supplier Trading Type",
+   "link_to": "Supplier Trading Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "RPP"
+}
